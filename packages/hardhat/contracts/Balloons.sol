@@ -4,8 +4,8 @@ pragma solidity >=0.8.0 <0.9.0;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract Balloons is ERC20 {
-  string constant color = "Red";
-  string constant location = "Floating in the summer sky";
+  string constant public color = "Red";
+  string constant public location = "Floating in the summer sky";
 
   constructor() ERC20("Balloons","BAL") {
       _mint(msg.sender,99*1000*10**18); // 99 [thousand] Red Balloons
